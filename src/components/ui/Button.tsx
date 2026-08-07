@@ -21,8 +21,6 @@ export function Button({
   children,
   ...props
 }: ButtonProps) {
-  const baseStyles = "inline-flex items-center justify-center font-medium transition-all duration-300 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 disabled:opacity-50 disabled:cursor-not-allowed";
-
   const variantClasses = {
     primary: "btn-primary",
     secondary: "btn-secondary",
@@ -38,7 +36,7 @@ export function Button({
 
   return (
     <button
-      className={cn(baseStyles, variantClasses[variant], sizeClasses[size], className)}
+      className={cn(variantClasses[variant], sizeClasses[size], className)}
       disabled={disabled || loading}
       {...props}
     >

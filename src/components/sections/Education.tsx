@@ -23,7 +23,7 @@ export function Education() {
     : { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] };
 
   return (
-    <section id="education" className="relative py-24 lg:py-32 px-6">
+    <section id="education" className="relative py-24 lg:py-32 px-6 section-ambient">
       <div className="max-w-3xl mx-auto">
         <motion.div
           initial={false}

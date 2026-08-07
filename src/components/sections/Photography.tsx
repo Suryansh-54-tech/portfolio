@@ -47,7 +47,7 @@ export function Photography() {
   const transition: Transition = reducedMotion ? { duration: 0.01 } : { duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] as const };
 
   return (
-    <section id="photography" className="relative py-24 lg:py-32 px-6">
+    <section id="photography" className="relative py-24 lg:py-32 px-6 section-ambient">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={false}

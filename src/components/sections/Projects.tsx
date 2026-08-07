@@ -39,7 +39,7 @@ export function Projects() {
     : projects.filter((p) => p.category === activeFilter);
 
   return (
-    <section id="projects" className="relative py-24 lg:py-32 px-6">
+    <section id="projects" className="relative py-24 lg:py-32 px-6 section-ambient">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

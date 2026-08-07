@@ -35,10 +35,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
             ref={ref}
             id={inputId}
             className={cn(
-              "w-full bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted/50 transition-all duration-200",
-              "focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-transparent",
-              "disabled:opacity-50 disabled:cursor-not-allowed",
-              "hover:border-primary/30",
+              "glass-input w-full",
               leftIcon ? "pl-12" : "pl-4",
               rightIcon ? "pr-12" : "pr-4",
               "py-3",
@@ -96,10 +93,7 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
           ref={ref}
           id={textareaId}
           className={cn(
-            "w-full bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted/50 transition-all duration-200 resize-none",
-            "focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-transparent",
-            "disabled:opacity-50 disabled:cursor-not-allowed",
-            "hover:border-primary/30",
+            "glass-input w-full resize-none",
             "p-4",
             error && "border-red-500/50 focus:ring-red-500/50",
             className

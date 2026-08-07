@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { forwardRef } from "react";
 
 interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
-  variant?: "default" | "glass" | "glass-strong" | "elevated" | "glossy";
+  variant?: "default" | "glass" | "glass-strong" | "elevated" | "glossy" | "glass-card";
   hover?: boolean;
 }
 
@@ -16,6 +16,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
       "glass-strong": "glass-strong",
       elevated: "bg-card border border-border shadow-xl",
       glossy: "glossy-card",
+      "glass-card": "glass-card",
     };
 
     return (

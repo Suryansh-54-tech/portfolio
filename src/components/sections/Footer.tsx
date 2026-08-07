@@ -27,7 +27,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="footer" className="relative border-t border-border bg-background/50 backdrop-blur-xl">
+    <footer id="footer" className="relative border-t border-border bg-background/50 backdrop-blur-xl section-ambient">
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid lg:grid-cols-4 gap-12 mb-12">
           <motion.div

@@ -26,19 +26,8 @@ export function Hero() {
     : { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] as const };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Premium Static Animated Background */}
-      <div className="absolute inset-0 -z-10 hero-background" aria-hidden="true">
-        {!reducedMotion && (
-          <>
-            <div className="glow-orb glow-orb-1" />
-            <div className="glow-orb glow-orb-2" />
-            <div className="glow-orb glow-orb-3" />
-            <div className="shimmer-line" />
-          </>
-        )}
-      </div>
-
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden section-ambient">
+      {/* Ambient background handled by .section-ambient */}
       <nav
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
@@ -130,7 +119,7 @@ export function Hero() {
             </Badge>
             
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.1] mb-6">
-              <span className="text-gradient-white">Building</span>{" "}
+              <span className="text-foreground">Building</span>{" "}
               <span className="text-gradient">Secure Systems</span>
               <br />
               <span className="text-foreground/80">with Clean Code & Creative Vision</span>
@@ -214,11 +203,11 @@ export function Hero() {
             <div className="relative aspect-square max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-primary-light/20 rounded-3xl blur-3xl" />
               
-              <div className="relative glossy-card rounded-3xl p-2 border-glass-border overflow-hidden">
-                <div className="glossy-card rounded-2xl p-8 aspect-square flex items-center justify-center relative">
+              <div className="relative glass-card rounded-3xl p-2 overflow-hidden">
+                <div className="glass-card rounded-2xl p-8 aspect-square flex items-center justify-center relative">
                   <div className="text-center">
                     <div className="w-24 h-24 mx-auto mb-6 relative">
-                      <div className="relative w-full h-full rounded-full bg-gradient-to-br from-primary/20 to-primary-light/20 flex items-center justify-center overflow-hidden glossy-card">
+                      <div className="relative w-full h-full rounded-full bg-gradient-to-br from-primary/20 to-primary-light/20 flex items-center justify-center overflow-hidden glass-card">
                         <Image
                           src="/profile.jpg"
                           alt="Suryansh Singh profile photo"
@@ -242,26 +231,26 @@ export function Hero() {
                   </div>
 
                   {/* Floating icons INSIDE the profile card */}
-                  <div className="absolute bottom-4 right-4 w-20 h-20 glossy-card rounded-xl p-3 animate-float hidden lg:block" style={{ animationDuration: "4s" }}>
+                  <div className="absolute bottom-4 right-4 w-20 h-20 glass-card rounded-xl p-3 animate-float hidden lg:block" style={{ animationDuration: "4s" }}>
                     <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary-light/20 rounded-lg flex items-center justify-center">
                       <span className="text-3xl">🔐</span>
                     </div>
                   </div>
                   
-                  <div className="absolute top-4 right-4 w-16 h-16 glossy-card rounded-lg p-2 animate-float-delayed hidden lg:block" style={{ animationDuration: "5s", animationDelay: "1s" }}>
+                  <div className="absolute top-4 right-4 w-16 h-16 glass-card rounded-lg p-2 animate-float-delayed hidden lg:block" style={{ animationDuration: "5s", animationDelay: "1s" }}>
                     <div className="w-full h-full bg-gradient-to-br from-primary-light/20 to-primary/20 rounded flex items-center justify-center">
                       <span className="text-2xl">📸</span>
                     </div>
                   </div>
 
                   {/* Mobile/tablet: reposition icons to not overlap content */}
-                  <div className="absolute bottom-2 right-2 w-14 h-14 glossy-card rounded-lg p-2 animate-float lg:hidden" style={{ animationDuration: "4s" }}>
+                  <div className="absolute bottom-2 right-2 w-14 h-14 glass-card rounded-lg p-2 animate-float lg:hidden" style={{ animationDuration: "4s" }}>
                     <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary-light/20 rounded flex items-center justify-center">
                       <span className="text-xl">🔐</span>
                     </div>
                   </div>
                   
-                  <div className="absolute top-2 left-2 w-12 h-12 glossy-card rounded p-1.5 animate-float-delayed lg:hidden" style={{ animationDuration: "5s", animationDelay: "1s" }}>
+                  <div className="absolute top-2 left-2 w-12 h-12 glass-card rounded p-1.5 animate-float-delayed lg:hidden" style={{ animationDuration: "5s", animationDelay: "1s" }}>
                     <div className="w-full h-full bg-gradient-to-br from-primary-light/20 to-primary/20 rounded flex items-center justify-center">
                       <span className="text-lg">📸</span>
                     </div>

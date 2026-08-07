@@ -190,7 +190,7 @@ function CertificationCard({ cert, index }: { cert: typeof certifications[0]; in
 
 export function Achievements() {
   return (
-    <section id="achievements" className="relative py-24 lg:py-32 px-6">
+    <section id="achievements" className="relative py-24 lg:py-32 px-6 section-ambient">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
