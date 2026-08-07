@@ -279,7 +279,7 @@ export function Contact() {
                   <Github className="w-4 h-4" aria-hidden="true" />
                   GitHub Profile
                 </a>
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 p-3 rounded-lg hover:bg-primary/10 transition-colors text-sm">
+                <a href="/resume/Resume_SuryanshSingh.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 p-3 rounded-lg hover:bg-primary/10 transition-colors text-sm">
                   <FileText className="w-4 h-4" aria-hidden="true" />
                   Download Resume
                 </a>

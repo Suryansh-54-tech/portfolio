@@ -106,7 +106,7 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Resources</h4>
             <ul className="space-y-3" role="list">
               <li>
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-sm text-muted hover:text-primary transition-colors flex items-center gap-2 group">
+                <a href="/resume/Resume_SuryanshSingh.pdf" target="_blank" rel="noopener noreferrer" className="text-sm text-muted hover:text-primary transition-colors flex items-center gap-2 group">
                   <FileText className="w-4 h-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" aria-hidden="true" />
                   Download Resume
                 </a>

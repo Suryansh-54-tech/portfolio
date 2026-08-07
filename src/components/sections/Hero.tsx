@@ -147,7 +147,7 @@ export function Hero() {
                 size="lg"
                 rightIcon={<Download className="w-5 h-5" />}
                 className="group"
-                onClick={() => window.open("/resume.pdf", "_blank")}
+                onClick={() => window.open("/resume/Resume_SuryanshSingh.pdf", "_blank")}
               >
                 Download Resume
                 <span className="transition-transform group-hover:translate-x-1" />
