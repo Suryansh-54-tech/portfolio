@@ -13,7 +13,6 @@ import { useReducedMotion } from "@/hooks";
 export function Hero() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [videoError, setVideoError] = useState(false);
   const reducedMotion = useReducedMotion();
 
   useEffect(() => {
@@ -28,32 +27,17 @@ export function Hero() {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Video Background */}
-      {!videoError && !reducedMotion && (
-        <div className="absolute inset-0 -z-10 hero-video-blur" aria-hidden="true">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            className="w-full h-full object-cover"
-            onError={() => setVideoError(true)}
-          >
-            <source src="/videos/blackhole.mp4" type="video/mp4" />
-          </video>
-          <div className="hero-video-overlay" />
-          <div className="hero-video-vignette" />
-        </div>
-      )}
-
-      {/* Fallback for reduced motion or video error */}
-      {(videoError || reducedMotion) && (
-        <div className="absolute inset-0 -z-10 bg-background" aria-hidden="true">
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--primary)_0%,_transparent_70%)] opacity-20" />
-        </div>
-      )}
+      {/* Premium Static Animated Background */}
+      <div className="absolute inset-0 -z-10 hero-background" aria-hidden="true">
+        {!reducedMotion && (
+          <>
+            <div className="glow-orb glow-orb-1" />
+            <div className="glow-orb glow-orb-2" />
+            <div className="glow-orb glow-orb-3" />
+            <div className="shimmer-line" />
+          </>
+        )}
+      </div>
 
       <nav
         className={cn(

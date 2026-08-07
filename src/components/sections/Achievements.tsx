@@ -31,7 +31,7 @@ const categoryConfig = {
 function ProviderLogo({ provider, size = 32 }: { provider: string; size?: number }) {
   const config = providerConfig[provider as keyof typeof providerConfig] || providerConfig.other;
   
-  const logos: Record<string, React.JSX.Element> = {
+  const logos: Record<string, React.ReactElement> = {
     "google-cloud": (
       <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032s2.701-6.032,6.033-6.032c1.518,0,2.818,0.547,3.839,1.44l2.817-2.817C17.429,0.768,15.138,0,12.545,0C7.384,0,3.127,4.257,3.127,9.418c0,2.433,1.049,4.55,2.64,5.977l-2.902,2.902C1.598,16.512,0,13.115,0,9.418C0,4.257,4.257,0,9.418,0c5.161,0,9.418,4.257,9.418,9.418c0,1.617-0.262,3.148-0.742,4.571L12.545,10.239z" fill="#4285F4" />
