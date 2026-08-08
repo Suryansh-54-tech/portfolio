@@ -55,7 +55,7 @@ export function Dashboard({ tiles, className }: DashboardProps) {
       animate="visible"
       variants={containerVariants}
       className={cn(
-        "grid grid-cols-4 grid-rows-[auto_auto_auto] gap-4 lg:gap-6 px-4 lg:px-6",
+        "grid grid-cols-4 grid-rows-[auto_auto_auto_auto] gap-4 lg:gap-6 px-4 lg:px-6",
         "max-w-[1400px] mx-auto",
         className
       )}

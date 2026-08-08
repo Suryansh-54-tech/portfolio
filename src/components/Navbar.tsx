@@ -1,16 +1,14 @@
 "use client";
 
 import { motion, Transition } from "framer-motion";
-import Image from "next/image";
-import { Github, Linkedin, Mail, Moon, Menu, X, Instagram, Download, Twitter } from "lucide-react";
+import { Moon, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-import { Badge } from "@/components/ui/Badge";
 import { cn } from "@/lib/utils";
-import { useState, useEffect } from "react";
-import { navItems, socialLinks } from "@/lib/data";
+import { useState } from "react";
+import { navItems } from "@/lib/data";
 import { useReducedMotion } from "@/hooks";
 
-type DetailViewType = 
+type DetailViewType =
   | "about"
   | "education"
   | "skills"
@@ -25,16 +23,15 @@ type DetailViewType =
 
 interface NavbarProps {
   onOpenDetail?: (view: DetailViewType) => void;
-  scrolled?: boolean;
 }
 
-export function Navbar({ onOpenDetail, scrolled = false }: NavbarProps) {
+export function Navbar({ onOpenDetail }: NavbarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const reducedMotion = useReducedMotion();
 
   const transition: Transition = reducedMotion
     ? { duration: 0.01 }
-    : { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] as const };
+    : { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] as const };
 
   const handleNavClick = (label: string) => {
     const viewMap: Record<string, DetailViewType> = {
@@ -46,6 +43,7 @@ export function Navbar({ onOpenDetail, scrolled = false }: NavbarProps) {
       Achievements: "achievements",
       Photography: "photography",
       Contact: "contact",
+      Resume: "resume",
     };
     const view = viewMap[label];
     if (view && onOpenDetail) {
@@ -57,28 +55,28 @@ export function Navbar({ onOpenDetail, scrolled = false }: NavbarProps) {
   return (
     <nav
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        scrolled ? "bg-background/80 backdrop-blur-xl border-b border-border" : "bg-transparent"
+        "fixed top-4 left-1/2 -translate-x-1/2 z-50 w-full max-w-[1400px] px-4 transition-all duration-300",
+        "glass-nav rounded-2xl"
       )}
       role="navigation"
       aria-label="Main navigation"
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="mx-auto px-4 py-3 flex items-center justify-between">
         <motion.div
           initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={transition}
-          className="text-2xl font-bold text-gradient"
+          className="text-xl font-bold text-gradient"
         >
           Suryansh Singh
         </motion.div>
 
-        <div className="hidden md:flex items-center gap-6">
-          {navItems.filter(item => item.label !== "Home").map((item) => (
+        <div className="hidden md:flex items-center gap-5">
+          {navItems.filter((item) => item.label !== "Home").map((item) => (
             <button
               key={item.label}
               onClick={() => handleNavClick(item.label)}
-              className="text-sm font-medium text-muted hover:text-foreground transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-primary after:to-primary-light after:transition-all hover:after:w-full cursor-pointer"
+              className="text-sm font-medium text-muted hover:text-foreground transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-accent-ice after:to-accent-violet after:transition-all hover:after:w-full cursor-pointer"
             >
               {item.label}
             </button>
@@ -88,7 +86,7 @@ export function Navbar({ onOpenDetail, scrolled = false }: NavbarProps) {
           </Button>
         </div>
 
-        <div className="flex items-center gap-4 md:hidden">
+        <div className="flex items-center gap-3 md:hidden">
           <Button variant="ghost" size="sm" className="hidden sm:flex">
             <Moon className="w-5 h-5" aria-hidden="true" />
           </Button>
@@ -111,10 +109,10 @@ export function Navbar({ onOpenDetail, scrolled = false }: NavbarProps) {
           initial={false}
           animate={{ opacity: 1, height: "auto" }}
           transition={transition}
-          className="md:hidden bg-background/95 backdrop-blur-xl border-b border-border px-6 py-4"
+          className="md:hidden bg-background/95 backdrop-blur-xl border-t border-border/50 px-4 py-3"
         >
-          <div className="flex flex-col gap-4">
-            {navItems.filter(item => item.label !== "Home").map((item) => (
+          <div className="flex flex-col gap-3">
+            {navItems.filter((item) => item.label !== "Home").map((item) => (
               <button
                 key={item.label}
                 onClick={() => handleNavClick(item.label)}

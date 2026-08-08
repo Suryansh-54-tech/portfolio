@@ -2,12 +2,10 @@
 
 import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Github, Linkedin, Instagram, Download, Mail } from "lucide-react";
 import { Dashboard } from "@/components/dashboard/Dashboard";
 import { DetailView } from "@/components/dashboard/DetailView";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/sections/Footer";
-import { HeroTile } from "@/components/HeroTile";
 import {
   AboutDetailView,
   EducationDetailView,
@@ -20,7 +18,6 @@ import {
   ContactDetailView,
   ResumeDetailView,
 } from "@/components/detail";
-import { cn } from "@/lib/utils";
 
 type DetailViewType = 
   | "about"
@@ -160,7 +157,6 @@ const detailViewConfig: Record<Exclude<DetailViewType, null>, {
 
 export default function Home() {
   const [openDetail, setOpenDetail] = useState<DetailViewType>(null);
-  const [scrolled, setScrolled] = useState(false);
 
   const handleOpenDetail = useCallback((view: DetailViewType) => {
     setOpenDetail(view);
@@ -288,7 +284,7 @@ export default function Home() {
       count: "6",
       countLabel: "Gallery Items",
       onClick: () => handleOpenDetail("photography"),
-      size: "medium" as const,
+      size: "large" as const,
     },
     {
       id: "achievements",
@@ -335,12 +331,10 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navbar onOpenDetail={handleOpenDetail} scrolled={scrolled} />
+      <Navbar onOpenDetail={handleOpenDetail} />
       
-      <main className="relative z-10 pt-16 pb-8 lg:pb-16">
+      <main className="relative z-10 pt-24 pb-8 lg:pb-16">
         <div className="max-w-[1400px] mx-auto px-4 lg:px-6">
-          <HeroTile />
-          
           <div className="mt-6 lg:mt-8">
             <Dashboard tiles={tiles} />
           </div>
