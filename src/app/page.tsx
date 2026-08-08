@@ -59,7 +59,7 @@ const detailViewConfig: Record<Exclude<DetailViewType, null>, {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
       </svg>
     ), 
-    accentColor: "#0EA5E9" 
+    accentColor: "#14e4c7" 
   },
   education: { 
     title: "Education", 
@@ -70,7 +70,7 @@ const detailViewConfig: Record<Exclude<DetailViewType, null>, {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
       </svg>
     ), 
-    accentColor: "#7C3AED" 
+    accentColor: "#f5d78a" 
   },
   skills: { 
     title: "Skills", 
@@ -80,7 +80,7 @@ const detailViewConfig: Record<Exclude<DetailViewType, null>, {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
       </svg>
     ), 
-    accentColor: "#06B6D4" 
+    accentColor: "#0066ff" 
   },
   projects: { 
     title: "Projects", 
@@ -90,17 +90,17 @@ const detailViewConfig: Record<Exclude<DetailViewType, null>, {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
       </svg>
     ), 
-    accentColor: "#10B981" 
+    accentColor: "#14e4c7" 
   },
-  experience: { 
+experience: { 
     title: "Experience", 
     subtitle: "Professional Journey", 
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 002 2v10a2 2 0 002 2z" />
       </svg>
     ), 
-    accentColor: "#F59E0B" 
+    accentColor: "#0ea57a" 
   },
   achievements: { 
     title: "Achievements", 
@@ -110,7 +110,7 @@ const detailViewConfig: Record<Exclude<DetailViewType, null>, {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
       </svg>
     ), 
-    accentColor: "#EF4444" 
+    accentColor: "#e87a90" 
   },
   leetcode: { 
     title: "LeetCode", 
@@ -120,7 +120,7 @@ const detailViewConfig: Record<Exclude<DetailViewType, null>, {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
       </svg>
     ), 
-    accentColor: "#F59E0B" 
+    accentColor: "#ffb340" 
   },
   photography: { 
     title: "Photography", 
@@ -131,7 +131,7 @@ const detailViewConfig: Record<Exclude<DetailViewType, null>, {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
       </svg>
     ), 
-    accentColor: "#EC4899" 
+    accentColor: "#f5c6a5" 
   },
   contact: { 
     title: "Contact", 
@@ -141,7 +141,7 @@ const detailViewConfig: Record<Exclude<DetailViewType, null>, {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       </svg>
     ), 
-    accentColor: "#10B981" 
+    accentColor: "#14e4c7" 
   },
   resume: { 
     title: "Resume", 
@@ -151,7 +151,7 @@ const detailViewConfig: Record<Exclude<DetailViewType, null>, {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
       </svg>
     ), 
-    accentColor: "#8B5CF6" 
+    accentColor: "#6b4cff" 
   },
 };
 
@@ -176,7 +176,7 @@ export default function Home() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
         </svg>
       ),
-      accentColor: "#0EA5E9",
+      accentColor: "#14e4c7",
       onClick: () => {},
       size: "xlarge" as const,
       featured: true,
@@ -190,7 +190,7 @@ export default function Home() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
         </svg>
       ),
-      accentColor: "#0EA5E9",
+      accentColor: "#14e4c7",
       count: "4+",
       countLabel: "Focus Areas",
       onClick: () => handleOpenDetail("about"),
@@ -205,7 +205,7 @@ export default function Home() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
         </svg>
       ),
-      accentColor: "#06B6D4",
+      accentColor: "#0066ff",
       count: "7",
       countLabel: "Categories",
       onClick: () => handleOpenDetail("skills"),
@@ -220,7 +220,7 @@ export default function Home() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
         </svg>
       ),
-      accentColor: "#10B981",
+      accentColor: "#14e4c7",
       count: "2+",
       countLabel: "Projects",
       onClick: () => handleOpenDetail("projects"),
@@ -235,22 +235,22 @@ export default function Home() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
         </svg>
       ),
-      accentColor: "#7C3AED",
+      accentColor: "#f5d78a",
       count: "3",
       countLabel: "Degrees",
       onClick: () => handleOpenDetail("education"),
       size: "medium" as const,
     },
-    {
+{
       id: "experience",
       title: "Experience",
       description: "Leadership roles at Ingenious Club, event management, team coordination, and technical skill development.",
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 002 2v10a2 2 0 002 2z" />
         </svg>
       ),
-      accentColor: "#F59E0B",
+      accentColor: "#0ea57a",
       count: "4+",
       countLabel: "Years",
       onClick: () => handleOpenDetail("experience"),
@@ -265,7 +265,7 @@ export default function Home() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
-      accentColor: "#F59E0B",
+      accentColor: "#ffb340",
       count: "100+",
       countLabel: "Problems",
       onClick: () => handleOpenDetail("leetcode"),
@@ -280,7 +280,7 @@ export default function Home() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
         </svg>
       ),
-      accentColor: "#EC4899",
+      accentColor: "#f5c6a5",
       count: "6",
       countLabel: "Gallery Items",
       onClick: () => handleOpenDetail("photography"),
@@ -295,13 +295,13 @@ export default function Home() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
         </svg>
       ),
-      accentColor: "#EF4444",
+      accentColor: "#e87a90",
       count: "5+",
       countLabel: "Certifications",
       onClick: () => handleOpenDetail("achievements"),
       size: "medium" as const,
     },
-    {
+{
       id: "contact",
       title: "Contact",
       description: "Get in touch for collaborations, project inquiries, or just to say hello.",
@@ -310,7 +310,7 @@ export default function Home() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
       ),
-      accentColor: "#10B981",
+      accentColor: "#14e4c7",
       onClick: () => handleOpenDetail("contact"),
       size: "medium" as const,
     },
@@ -323,7 +323,7 @@ export default function Home() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
         </svg>
       ),
-      accentColor: "#8B5CF6",
+      accentColor: "#6b4cff",
       onClick: () => handleOpenDetail("resume"),
       size: "medium" as const,
     },
