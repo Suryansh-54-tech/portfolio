@@ -222,7 +222,7 @@ export function AchievementsDetailView() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
-        className="mt-10 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-3"
+        className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3"
       >
         {Object.entries(providerConfig).map(([key, config]) => {
           const count = certifications.filter(c => c.provider === key).length;

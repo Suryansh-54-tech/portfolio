@@ -29,7 +29,7 @@ export function Footer() {
   return (
     <footer id="footer" className="relative border-t border-border bg-background/50 backdrop-blur-xl section-ambient">
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
