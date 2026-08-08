@@ -1,0 +1,10 @@
+export { AboutDetailView } from "./AboutDetailView";
+export { EducationDetailView } from "./EducationDetailView";
+export { SkillsDetailView } from "./SkillsDetailView";
+export { ProjectsDetailView } from "./ProjectsDetailView";
+export { ExperienceDetailView } from "./ExperienceDetailView";
+export { AchievementsDetailView } from "./AchievementsDetailView";
+export { LeetCodeDetailView } from "./LeetCodeDetailView";
+export { PhotographyDetailView } from "./PhotographyDetailView";
+export { ContactDetailView } from "./ContactDetailView";
+export { ResumeDetailView } from "./ResumeDetailView";
