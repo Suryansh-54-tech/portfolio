@@ -24,10 +24,10 @@ const sizeClasses = {
 };
 
 const sizeContentClasses = {
-  small: "p-4",
-  medium: "p-5",
-  large: "p-6",
-  xlarge: "p-6 lg:p-8",
+  small: "p-3 sm:p-4",
+  medium: "p-4 sm:p-5 md:p-6",
+  large: "p-5 sm:p-6 md:p-8",
+  xlarge: "p-5 sm:p-6 md:p-8 lg:p-10",
 };
 
 export const Tile = forwardRef<HTMLDivElement, TileProps>(

@@ -197,3 +197,72 @@ html::before {
     scroll-behavior:auto !important;
   }
 }
+
+/* ---------- RESPONSIVE DASHBOARD GRID ---------- */
+@media (max-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "hero hero"
+      "about skills"
+      "projects projects"
+      "education experience"
+      "leetcode photography"
+      "achievements achievements"
+      "contact resume";
+  }
+}
+
+@media (max-width: 640px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero"
+      "about"
+      "skills"
+      "projects"
+      "education"
+      "experience"
+      "leetcode"
+      "photography"
+      "achievements"
+      "contact"
+      "resume";
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .glass-tile {
+    padding: 1rem;
+  }
+
+  .glass-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+/* ---------- RESPONSIVE TYPOGRAPHY ---------- */
+@media (max-width: 640px) {
+  h1, .section-heading {
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+    line-height: 1.2;
+  }
+  h2, .section-subheading {
+    font-size: clamp(1rem, 4vw, 1.25rem);
+  }
+  p {
+    font-size: clamp(0.875rem, 3.5vw, 1rem);
+  }
+}
+
+/* ---------- DETAIL VIEW MOBILE ---------- */
+@media (max-width: 640px) {
+  .detail-view-mobile {
+    width: 100%;
+    max-width: 100vw;
+    min-height: 100dvh;
+    border-radius: 0;
+    padding: 1rem;
+  }
+}

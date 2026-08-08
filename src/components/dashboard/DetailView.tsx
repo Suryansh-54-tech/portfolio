@@ -84,7 +84,7 @@ export function DetailView({
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
           transition={{ duration: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
           className={cn(
-            "relative w-full max-w-5xl max-h-[90vh] glass-strong rounded-2xl overflow-hidden flex flex-col",
+            "relative w-full max-w-5xl max-h-[90vh] glass-strong rounded-2xl overflow-hidden flex flex-col detail-view-mobile",
             className
           )}
           onClick={(e) => e.stopPropagation()}
@@ -147,7 +147,7 @@ export function DetailView({
             </div>
           </header>
 
-          <div className="flex-1 overflow-auto p-6 lg:p-8" style={{ minHeight: "300px" }}>
+          <div className="flex-1 overflow-auto p-4 sm:p-6 lg:p-8" style={{ minHeight: "300px" }}>
             {children}
           </div>
 
