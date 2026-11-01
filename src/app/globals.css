@@ -82,22 +82,16 @@ html::before {
   inset: 0;
   z-index: -1;
   pointer-events: none;
+  /* WebGL black hole canvas replaces this background — kept at near-zero opacity as subtle fallback */
   background:
     radial-gradient(ellipse 55% 45% at 8% 12%, var(--ambient-teal) 0%, transparent 55%),
     radial-gradient(ellipse 45% 55% at 92% 88%, var(--ambient-cobalt) 0%, transparent 50%),
-    radial-gradient(ellipse 35% 35% at 50% 50%, var(--ambient-emerald) 0%, transparent 60%),
-    radial-gradient(ellipse 28% 28% at 75% 25%, var(--ambient-champagne) 0%, transparent 65%),
-    radial-gradient(ellipse 30% 30% at 20% 80%, var(--ambient-rose) 0%, transparent 55%),
-    radial-gradient(ellipse 25% 25% at 60% 60%, var(--ambient-gold) 0%, transparent 50%),
-    radial-gradient(ellipse 22% 22% at 40% 40%, var(--ambient-violet) 0%, transparent 45%);
-  animation: ambient-float 160s ease-in-out infinite;
-  opacity: 0.5;
+    radial-gradient(ellipse 35% 35% at 50% 50%, var(--ambient-emerald) 0%, transparent 60%);
+  opacity: 0.1;
 }
 @keyframes ambient-float {
-  0%,100%   { transform: translate(0,0) scale(1); opacity:0.5; }
-  25%       { transform: translate(-1.2%,0.8%) scale(1.008); opacity:0.48; }
-  50%       { transform: translate(0.9%,-1%) scale(0.992); opacity:0.52; }
-  75%       { transform: translate(-0.8%,-0.9%) scale(1.004); opacity:0.49; }
+  0%,100%   { transform: translate(0,0) scale(1); }
+  50%       { transform: translate(0.5%,-0.5%) scale(1.002); }
 }
 
 /* ---------- GLASS UTILITIES ---------- */

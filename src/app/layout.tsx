@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { BlackHoleCanvas } from "@/components/BlackHoleCanvas";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -97,6 +98,7 @@ export default function RootLayout({
       <head>
       </head>
       <body className="antialiased min-h-screen">
+        <BlackHoleCanvas />
         {children}
       </body>
     </html>
