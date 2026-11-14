@@ -1,91 +1,43 @@
 import type { Metadata, Viewport } from "next";
-import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { JetBrains_Mono, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
-import { BlackHoleCanvas } from "@/components/BlackHoleCanvas";
-
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["300", "400", "500", "600", "700"],
-});
+import "./retro.css";
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   subsets: ["latin"],
   display: "swap",
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700", "800"],
+});
+
+const ibmPlexMono = IBM_Plex_Mono({
+  variable: "--font-ibm-plex-mono",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Suryansh Singh | Cyber Security | Software Developer",
-    template: "%s | Suryansh Singh",
-  },
-  description: "Computer Science Undergraduate specializing in Cyber Security, Software Development and Photography. Building secure systems with clean code and creative vision.",
+  title: "suryansh@portfolio: ~/dev",
+  description:
+    "Suryansh Singh - Full-Stack Engineer, Cyber Security & AI Systems Developer. Cosmic Relativistic Black Hole Retro CRT Terminal.",
   keywords: [
+    "Suryansh Singh",
     "Cyber Security",
-    "Software Developer",
-    "Java Developer",
-    "Computer Science Student",
-    "Photography",
-    "Web Development",
-    "React",
-    "Next.js",
-    "TypeScript",
-    "Network Security",
-    "Data Structures & Algorithms",
+    "Full Stack Developer",
+    "AI Systems",
+    "Nyayantra",
+    "Razorpay AI Buildathon",
+    "PSIT Kanpur",
   ],
   authors: [{ name: "Suryansh Singh" }],
   creator: "Suryansh Singh",
-  publisher: "Suryansh Singh",
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://suryansh-singh.dev",
-    title: "Suryansh Singh | Cyber Security | Software Developer",
-    description: "Computer Science Undergraduate specializing in Cyber Security, Software Development and Photography.",
-    siteName: "Suryansh Singh Portfolio",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Suryansh Singh Portfolio Preview",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Suryansh Singh | Cyber Security | Software Developer",
-    description: "Computer Science Undergraduate specializing in Cyber Security, Software Development and Photography.",
-    images: ["/og-image.png"],
-    creator: "@SuryanshSingh",
-  },
-  verification: {
-    google: "google-site-verification-code",
-  },
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#08080B" },
-    { media: "(prefers-color-scheme: dark)", color: "#08080B" },
-  ],
+  themeColor: "#000103",
   width: "device-width",
   initialScale: 1,
-  maximumScale: 5,
 };
 
 export default function RootLayout({
@@ -94,11 +46,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${jetbrainsMono.variable}`}>
-      <head>
-      </head>
-      <body className="antialiased min-h-screen">
-        <BlackHoleCanvas />
+    <html lang="en" className={`${jetbrainsMono.variable} ${ibmPlexMono.variable}`}>
+      <head />
+      <body className="antialiased min-h-screen bg-[#000103] text-[#eafff1]">
         {children}
       </body>
     </html>
